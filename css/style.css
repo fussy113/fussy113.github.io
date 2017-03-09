@@ -3,3 +3,13 @@ body {
     color: white;
     background-color: midnightblue;
 }
+
+h1 {
+    font-size: 54pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 42pt;
+    text-align: center;
+}
