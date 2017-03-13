@@ -1,3 +1,14 @@
-/**
- * Created by fussy on 2017/03/09.
- */
+
+$(function  DisplayProfile(){
+    $("#ProfileBox").css("display", "none");
+    $("#ProfilePush").click(function(){
+        $("#ProfileBox").toggle();
+    });
+});
+
+$(function DisplayDevelop(){
+    $("#DevelopBox").css("display", "none");
+    $("#DevelopPush").click(function(){
+        $("#DevelopBox").toggle();
+    });
+});

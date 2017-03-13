@@ -1,15 +1,26 @@
 body {
     font-family: COTILLIO, cursive;
+    text-align: center;
     color: white;
     background-color: midnightblue;
 }
 
 h1 {
     font-size: 54pt;
-    text-align: center;
 }
 
 h2 {
     font-size: 42pt;
-    text-align: center;
 }
+
+#ProfilePush {
+    padding-left: 0;
+}
+
+#DevelopPush {
+    padding-left: 0;
+}
+
+.colorFB {color: #305097;}
+.colorTW {color: #00aced;}
+.colorGH {color: #000000;}
