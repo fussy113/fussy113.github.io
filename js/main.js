@@ -1,14 +1,9 @@
-
-$(function  DisplayProfile(){
-    $("#ProfileBox").css("display", "none");
-    $("#ProfilePush").click(function(){
-        $("#ProfileBox").toggle();
-    });
+$('#ProfilePush').click(function () {
+    $("#ProfileBox").slideToggle();
 });
 
-$(function DisplayDevelop(){
-    $("#DevelopBox").css("display", "none");
-    $("#DevelopPush").click(function(){
-        $("#DevelopBox").toggle();
-    });
+
+$('#DevelopPush').click(function () {
+    $("#DevelopBox").slideToggle();
 });
+
