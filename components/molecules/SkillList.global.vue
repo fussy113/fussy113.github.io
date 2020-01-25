@@ -1,7 +1,6 @@
 <template>
-  <div class="container">
-    Top Page
-    <skill-list />
+  <div>
+    skill list
   </div>
 </template>
 

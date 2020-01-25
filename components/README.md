@@ -6,9 +6,9 @@ The components directory contains your Vue.js Components.
 
 _Nuxt.js doesn't supercharge these components._
 
-||再利用性|store参照|同階層参照|
-|---------|---|---|---|
-|atoms    | ○ | × | × |
-|molecules| ○ | × | ○ |
-|organisms| × | ○ | ○ |
-|pages    | × | ○ | × |
+|         |再利用性|store参照|同階層参照|命名規則|
+|---------|---|---|---|---|
+|atoms    | ○ | × | × |コンポーネント名.global.vue|
+|molecules| ○ | × | ○ |コンポーネント名.global.vue|
+|organisms| × | ○ | ○ |-|
+|pages    | × | ○ | × |-|
