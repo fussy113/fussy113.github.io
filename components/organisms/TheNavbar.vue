@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    Top Page
-    <skill-list />
+  <div>
+    the navbar
+    <app-button />
   </div>
 </template>
 
