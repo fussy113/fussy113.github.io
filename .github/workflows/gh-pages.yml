@@ -33,6 +33,6 @@ jobs:
     - name: deploy
       uses: peaceiris/actions-gh-pages@v2.4.0
       env:
-        PERSONAL_TOKEN: ${{ PERSONAL_TOKEN }}
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./dist
