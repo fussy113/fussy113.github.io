@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    Top Page
+    About Page
     <skill-list />
   </div>
 </template>
