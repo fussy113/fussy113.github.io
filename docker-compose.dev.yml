@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.dev
+    volumes:
+      - ./:/var/www
+    ports:
+      - "3000:3000"
+    tty: true
+    restart: always
