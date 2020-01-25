@@ -1,0 +1,38 @@
+name: publish github pages
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+
+    - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.14.1'
+
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: install
+      run: yarn install
+
+    - name: generate
+      run: yarn generate
+
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2.4.0
+      env:
+        PERSONAL_TOKEN: ${{ PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./dist
