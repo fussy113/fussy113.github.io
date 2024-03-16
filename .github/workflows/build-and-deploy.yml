@@ -25,7 +25,7 @@ jobs:
       - run: yarn build-only
       - uses: actions/upload-pages-artifact@v3
         with:
-          artifact-name: my-page
+          name: my-page
           path: dist
 
   deploy:
@@ -38,6 +38,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/composite/initialize
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
