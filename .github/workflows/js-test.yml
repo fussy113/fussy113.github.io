@@ -3,7 +3,7 @@ name: JavaScript Tests
 on:
   pull_request:
     branches:
-      - build
+      - main
 
 jobs:
   setup:

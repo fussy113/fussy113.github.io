@@ -1,3 +1,5 @@
+name: Code Review from AI
+
 on:
   pull_request:
     types: [opened, reopened, synchronize]
