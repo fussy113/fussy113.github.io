@@ -1,0 +1,42 @@
+name: JavaScript Tests
+
+on:
+  pull_request:
+    branches:
+      - build
+
+env:
+  NODE_VERSION: 20.11.0
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: build
+            command: yarn build-only
+          - name: type-check
+            command: yarn type-check
+          - name: lint
+            command: yarn lint
+          - name: unit-test
+            command: yarn test:unit
+    steps:
+      - uses: actions/checkout@v4
+      - name: Corepack enable because yarn v4 is used
+        run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: cache node modules
+        id: cache-node-modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+      - name: Run ${{ matrix.name }}
+        run: ${{ matrix.command }}
