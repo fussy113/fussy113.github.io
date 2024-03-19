@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "stylelint.vscode-stylelint",
-    "vue.volar"
+    "vue.volar",
+    "yusukehirao.vscode-markuplint"
   ]
 }
