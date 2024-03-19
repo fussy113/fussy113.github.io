@@ -8,11 +8,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "ms-playwright.playwright",
+        "esbenp.prettier-vscode",
         "ms-vscode.vscode-typescript-tslint-plugin",
-        "yusukehirao.vscode-markuplint",
+        "stylelint.vscode-stylelint",
         "vue.volar"
       ]
     }
