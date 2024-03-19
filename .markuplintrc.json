@@ -5,7 +5,7 @@
   "parser": {
     ".vue$": "@markuplint/vue-parser"
   },
-  "spec": {
+  "specs": {
     ".vue$": "@markuplint/vue-spec"
   }
 }
