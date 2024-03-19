@@ -74,7 +74,6 @@ nav a:first-of-type {
   }
 
   nav {
-
     padding: 1rem 0;
     margin-top: 1rem;
     margin-left: -1rem;
