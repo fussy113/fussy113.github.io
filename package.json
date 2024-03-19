@@ -13,22 +13,26 @@
     "yarn": "4.1.1"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "test:unit": "vitest",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "dev": "vite",
+    "format": "prettier --write src/",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "stylelint": "stylelint \"src/**/*.{vue,scss}\"",
+    "markuplint": "markuplint  \"src/**/*.vue\"",
+    "markuplint:fix": "markuplint --fix \"src/**/*.vue\"",
+    "preview": "vite preview",
     "stylelint:fix": "stylelint --fix \"src/**/*.{vue,scss}\"",
-    "format": "prettier --write src/"
+    "stylelint": "stylelint \"src/**/*.{vue,scss}\"",
+    "test:unit": "vitest",
+    "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@markuplint/vue-parser": "^4.2.0",
+    "@markuplint/vue-spec": "^4.1.0",
     "@rushstack/eslint-patch": "^1.7.2",
     "@tsconfig/node20": "^20.1.2",
     "@types/jsdom": "^21.1.6",
@@ -41,6 +45,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "jsdom": "^24.0.0",
+    "markuplint": "^4.3.0",
     "npm-run-all2": "^6.1.2",
     "postcss-html": "^1.6.0",
     "prettier": "^3.2.5",
