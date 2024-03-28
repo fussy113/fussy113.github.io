@@ -1048,12 +1048,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@markuplint/vue-spec@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@markuplint/vue-spec@npm:4.1.0"
+"@markuplint/vue-spec@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "@markuplint/vue-spec@npm:4.2.0"
   dependencies:
-    "@markuplint/ml-spec": "npm:4.1.0"
-  checksum: 10c0/0bb2ee496c8d817415e669f4ae5b587e9158565d2511e3c79998bda3bce2d3d81c1ad3c1188306d7354897c40ca706491f0457d5af6213185196118e1f5c39d1
+    "@markuplint/ml-spec": "npm:4.2.0"
+  checksum: 10c0/779c0840791703695183931f3d37b0632bf4fe58fd9db3a948616df6f509b29b50f08e74a0975a4def95351986f417b09d75e18e2df13c19522f0dd73421f80b
   languageName: node
   linkType: hard
 
@@ -3385,7 +3385,7 @@ __metadata:
   resolution: "fussy113.github.io@workspace:."
   dependencies:
     "@markuplint/vue-parser": "npm:^4.2.0"
-    "@markuplint/vue-spec": "npm:^4.1.0"
+    "@markuplint/vue-spec": "npm:^4.2.0"
     "@rushstack/eslint-patch": "npm:^1.7.2"
     "@tsconfig/node20": "npm:^20.1.3"
     "@types/jsdom": "npm:^21.1.6"
