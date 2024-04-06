@@ -1026,6 +1026,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@markuplint/ml-ast@npm:4.2.0":
+  version: 4.2.0
+  resolution: "@markuplint/ml-ast@npm:4.2.0"
+  checksum: 10c0/b9c1a61cc8b8f417a8996db1f33292413ad4e15feb6e5b380a358d7a9506a8f14f0cf3d341d83d7c78102c5b7b047f641e5fd10e00f8ab2efce8db86ea172859
+  languageName: node
+  linkType: hard
+
 "@markuplint/ml-config@npm:4.3.0":
   version: 4.3.0
   resolution: "@markuplint/ml-config@npm:4.3.0"
@@ -1086,6 +1093,19 @@ __metadata:
     is-plain-object: "npm:5.0.0"
     type-fest: "npm:4.14.0"
   checksum: 10c0/a90ad8f1d8007fa44c7d56fe54239efa5e88299772e2596244d879284de4207bb53b5399bf5362825339e608b2979016742f5383ae276c4c6156ac860b583e1b
+  languageName: node
+  linkType: hard
+
+"@markuplint/ml-spec@npm:4.3.0":
+  version: 4.3.0
+  resolution: "@markuplint/ml-spec@npm:4.3.0"
+  dependencies:
+    "@markuplint/ml-ast": "npm:4.2.0"
+    "@markuplint/types": "npm:4.2.0"
+    dom-accessibility-api: "npm:0.6.3"
+    is-plain-object: "npm:5.0.0"
+    type-fest: "npm:4.14.0"
+  checksum: 10c0/b38a24687fa01b3afb4289b029144c7acf944a37f3e4e9ce5f9152030d41ad9f9a1e63eec0555f04679bce96ef1d9a0590da3a73ebeb7d7aae5f5575c12f99ed
   languageName: node
   linkType: hard
 
@@ -1197,6 +1217,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@markuplint/types@npm:4.2.0":
+  version: 4.2.0
+  resolution: "@markuplint/types@npm:4.2.0"
+  dependencies:
+    "@types/css-tree": "npm:2.3.7"
+    "@types/debug": "npm:4.1.12"
+    "@types/whatwg-mimetype": "npm:3.0.2"
+    bcp-47: "npm:2.1.0"
+    css-tree: "npm:2.3.1"
+    debug: "npm:4.3.4"
+    leven: "npm:4.0.0"
+    type-fest: "npm:4.14.0"
+    whatwg-mimetype: "npm:4.0.0"
+  checksum: 10c0/63a33c6672eee541005cb205d141f28cd90f4427c3df5f25f71ad0c949f7ebc651950dd422d33c79de74fc2f897d9146be514170cb1a7593a26e1e4eb5edf359
+  languageName: node
+  linkType: hard
+
 "@markuplint/vue-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "@markuplint/vue-parser@npm:4.2.0"
@@ -1209,12 +1246,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@markuplint/vue-spec@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@markuplint/vue-spec@npm:4.1.0"
+"@markuplint/vue-spec@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@markuplint/vue-spec@npm:4.3.0"
   dependencies:
-    "@markuplint/ml-spec": "npm:4.1.0"
-  checksum: 10c0/0bb2ee496c8d817415e669f4ae5b587e9158565d2511e3c79998bda3bce2d3d81c1ad3c1188306d7354897c40ca706491f0457d5af6213185196118e1f5c39d1
+    "@markuplint/ml-spec": "npm:4.3.0"
+  checksum: 10c0/766628de70ee7a3124e7d2ba738e7dfedb1676ad2d5144b4449814b22d96eed52331c8a703bd1dfc9e59db9e5a42ee85e7f1c5932e3982bb5a21cdea440d8781
   languageName: node
   linkType: hard
 
@@ -3724,7 +3761,7 @@ __metadata:
   resolution: "fussy113.github.io@workspace:."
   dependencies:
     "@markuplint/vue-parser": "npm:^4.2.0"
-    "@markuplint/vue-spec": "npm:^4.1.0"
+    "@markuplint/vue-spec": "npm:^4.3.0"
     "@rushstack/eslint-patch": "npm:^1.7.2"
     "@tsconfig/node20": "npm:^20.1.3"
     "@types/jsdom": "npm:^21.1.6"
