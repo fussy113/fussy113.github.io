@@ -19,6 +19,7 @@ jobs:
       - name: PR Agent action step
         id: pragent
         uses: Codium-ai/pr-agent@main
+        # https://github.com/Codium-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
