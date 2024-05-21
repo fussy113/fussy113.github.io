@@ -47,7 +47,7 @@
     "eslint-plugin-vue": "^9.23.0",
     "jsdom": "^24.0.0",
     "markuplint": "^4.4.0",
-    "npm-run-all2": "^6.1.2",
+    "npm-run-all2": "^6.2.0",
     "postcss-html": "^1.6.0",
     "prettier": "^3.2.5",
     "sass": "^1.77.2",
