@@ -1,9 +1,8 @@
 name: Code Review from AI
 
 on:
-  workflow_run:
-    workflows: ['JavaScript Tests']
-    types: [completed]
+  pull_request:
+    types: [opened, reopened, synchronize]
   issue_comment:
     types: [created, edited]
 
