@@ -6,11 +6,11 @@
   "private": true,
   "engines": {
     "npm": "use yarn instead",
-    "yarn": "4.2.2"
+    "yarn": "4.8.1"
   },
   "volta": {
-    "node": "20.13.1",
-    "yarn": "4.2.2"
+    "node": "22.14.0",
+    "yarn": "4.8.1"
   },
   "scripts": {
     "build-only": "vite build",
@@ -37,9 +37,9 @@
     "@markuplint/vue-parser": "^4.2.0",
     "@markuplint/vue-spec": "^4.3.0",
     "@rushstack/eslint-patch": "^1.10.3",
-    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/node22": "^22.0.1",
     "@types/jsdom": "^21.1.6",
-    "@types/node": "^20.11.30",
+    "@types/node": "^22.13.15",
     "@typescript-eslint/parser": "^8.29.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
