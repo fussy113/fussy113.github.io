@@ -45,7 +45,7 @@
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
-    "jsdom": "^24.0.0",
+    "jsdom": "^26.0.0",
     "markuplint": "^4.11.8",
     "npm-run-all2": "^6.2.0",
     "postcss-html": "^1.6.0",
