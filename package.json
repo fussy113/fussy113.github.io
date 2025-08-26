@@ -36,7 +36,7 @@
     "@eslint/js": "^9.23.0",
     "@markuplint/vue-parser": "^4.6.18",
     "@markuplint/vue-spec": "^4.5.18",
-    "@rushstack/eslint-patch": "^1.10.0",
+    "@rushstack/eslint-patch": "^1.12.0",
     "@tailwindcss/vite": "^4.0.17",
     "@tsconfig/node22": "^22.0.1",
     "@types/jsdom": "^21.1.7",
