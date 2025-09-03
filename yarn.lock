@@ -3883,7 +3883,7 @@ __metadata:
     stylelint: "npm:^16.17.0"
     stylelint-config-recess-order: "npm:^6.0.0"
     stylelint-config-recommended-scss: "npm:^14.1.0"
-    stylelint-config-recommended-vue: "npm:^1.6.0"
+    stylelint-config-recommended-vue: "npm:^1.6.1"
     tailwindcss: "npm:^4.0.17"
     typescript: "npm:^5.8.2"
     typescript-eslint: "npm:^8.29.0"
@@ -6378,9 +6378,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-recommended-vue@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "stylelint-config-recommended-vue@npm:1.6.0"
+"stylelint-config-recommended-vue@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "stylelint-config-recommended-vue@npm:1.6.1"
   dependencies:
     semver: "npm:^7.3.5"
     stylelint-config-html: "npm:>=1.0.0"
@@ -6388,7 +6388,7 @@ __metadata:
   peerDependencies:
     postcss-html: ^1.0.0
     stylelint: ">=14.0.0"
-  checksum: 10c0/638d3106b0d82ccf550c48e56dbf1c4eafd2e9e523d25f15dd75da626244c8bf22d9816aef260e5485ea6e5efe3259c0a7f30b4f2ad7443a983ae6de890e9451
+  checksum: 10c0/2513fc4c6712b70d4793635690025ee3b73bfb8df9531aab46a31c677b7e7fadc38e2db640097a882e0cb3cc5c416b320099146e489f310faf9e6a73e062fd2e
   languageName: node
   linkType: hard
 
