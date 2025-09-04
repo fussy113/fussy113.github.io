@@ -19,14 +19,14 @@ jobs:
         id: initialize
       - name: Install dependencies if cache not hit
         if: ${{ steps.initialize.outputs.node_modules_cache_hit != 'true' }}
-        run: yarn install
+        run: npm install
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - uses: ./.github/composite/initialize
-      - run: yarn build-only
+      - run: npm run build-only
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           name: github-pages

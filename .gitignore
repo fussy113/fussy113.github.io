@@ -39,3 +39,12 @@ coverage
 
 test-results/
 playwright-report/
+
+# Claude Code and MCP specific files
+.claude/settings.local.json
+.mcp.json
+.serena/memories/
+.serena/cache/
+.serena/index/
+.serena/logs/
+.serena/dashboard/

@@ -17,25 +17,25 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-yarn
+npm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-yarn build
+npm run build
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-yarn test:unit
+npm run test:unit
 ```
 
 ### Run End-to-End Tests with [Playwright](https://playwright.dev)
@@ -45,20 +45,20 @@ yarn test:unit
 npx playwright install
 
 # When testing on CI, must build the project first
-yarn build
+npm run build
 
 # Runs the end-to-end tests
-yarn test:e2e
+npm run test:e2e
 # Runs the tests only on Chromium
-yarn test:e2e --project=chromium
+npm run test:e2e --project=chromium
 # Runs the tests of a specific file
-yarn test:e2e tests/example.spec.ts
+npm run test:e2e tests/example.spec.ts
 # Runs the tests in debug mode
-yarn test:e2e --debug
+npm run test:e2e --debug
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-yarn lint
+npm run lint
 ```
