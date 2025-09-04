@@ -20,3 +20,6 @@ runs:
       with:
         path: node_modules
         key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+    - name: Install dependencies (fix optional dependencies bug)
+      shell: bash
+      run: npm install
