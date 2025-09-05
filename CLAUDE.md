@@ -62,7 +62,7 @@ src/
 │   ├── icons/       # アイコンコンポーネント
 │   └── *.vue        # コンポーネントファイル
 ├── views/           # ページレベルコンポーネント
-│   ├── HomeView.vue
+│   └── HomeView.vue
 ├── router/          # Vue Router設定
 │   └── index.ts     # ルート定義
 ├── App.vue          # ルートコンポーネント
