@@ -8,7 +8,6 @@ interface SocialLink {
   name: string
   url: string
   icon: any
-  description: string
 }
 
 const socialLinks: SocialLink[] = [
@@ -16,32 +15,28 @@ const socialLinks: SocialLink[] = [
     name: 'GitHub',
     url: 'https://github.com/fussy113',
     icon: IconGitHub,
-    description: 'コードリポジトリとプロジェクト',
   },
   {
     name: 'Qiita',
     url: 'https://qiita.com/fussy113',
     icon: IconQiita,
-    description: '技術記事とナレッジシェア',
   },
   {
     name: 'Zenn',
     url: 'https://zenn.dev/fussy113',
     icon: IconZenn,
-    description: '技術ブログと記事投稿',
   },
   {
     name: 'Lapras',
-    url: 'https://lapras.com/public/fussy113',
+    url: 'https://lapras.com/public/TJBGDRB',
     icon: IconLapras,
-    description: 'プロフェッショナルプロフィール',
   },
 ]
 </script>
 
 <template>
   <div class="social-links">
-    <h2 class="section-title">ソーシャルリンク</h2>
+    <h2 class="section-title">Links</h2>
     <div class="links-grid">
       <a
         v-for="link in socialLinks"
@@ -56,7 +51,6 @@ const socialLinks: SocialLink[] = [
         </div>
         <div class="link-content">
           <h3 class="link-name">{{ link.name }}</h3>
-          <p class="link-description">{{ link.description }}</p>
         </div>
       </a>
     </div>
@@ -130,13 +124,6 @@ const socialLinks: SocialLink[] = [
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-heading);
-}
-
-.link-description {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: var(--color-text);
 }
 
 @media (max-width: 640px) {

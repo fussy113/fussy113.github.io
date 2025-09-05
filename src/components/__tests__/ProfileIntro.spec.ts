@@ -18,15 +18,9 @@ describe('ProfileIntro', () => {
   it('displays profile title', () => {
     const wrapper = mount(ProfileIntro)
     
-    expect(wrapper.find('.profile-title').text()).toBe('Software Engineer')
+    expect(wrapper.find('.profile-title').text()).toBe('Web Engineer')
   })
 
-  it('displays profile description', () => {
-    const wrapper = mount(ProfileIntro)
-    
-    expect(wrapper.find('.profile-description').exists()).toBe(true)
-    expect(wrapper.find('.profile-description').text()).toContain('プログラミングと技術への情熱')
-  })
 
   it('displays avatar placeholder', () => {
     const wrapper = mount(ProfileIntro)

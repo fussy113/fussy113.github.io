@@ -15,11 +15,7 @@ import SocialLinks from './SocialLinks.vue'
 
         <div class="profile-info">
           <h1 class="profile-name">fussy113</h1>
-          <p class="profile-title">Software Engineer</p>
-          <p class="profile-description">
-            プログラミングと技術への情熱を持つソフトウェアエンジニアです。<br>
-            新しい技術を学び、共有することを楽しんでいます。
-          </p>
+          <p class="profile-title">Web Engineer</p>
         </div>
       </div>
     </section>
@@ -60,7 +56,11 @@ import SocialLinks from './SocialLinks.vue'
   justify-content: center;
   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, var(--color-background-soft) 0%, var(--color-background-mute) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-background-soft) 0%,
+    var(--color-background-mute) 100%
+  );
   border: 3px solid var(--color-border);
   border-radius: 50%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -90,14 +90,6 @@ import SocialLinks from './SocialLinks.vue'
   font-size: 1.2rem;
   font-weight: 500;
   color: hsla(160, 100%, 37%, 1);
-}
-
-.profile-description {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--color-text);
 }
 
 .social-section {

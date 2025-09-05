@@ -12,7 +12,7 @@ describe('SocialLinks', () => {
   it('displays section title', () => {
     const wrapper = mount(SocialLinks)
     
-    expect(wrapper.find('.section-title').text()).toBe('ソーシャルリンク')
+    expect(wrapper.find('.section-title').text()).toBe('Links')
   })
 
   it('displays all social links', () => {
@@ -32,7 +32,6 @@ describe('SocialLinks', () => {
     expect(githubLink?.attributes('href')).toBe('https://github.com/fussy113')
     expect(githubLink?.attributes('target')).toBe('_blank')
     expect(githubLink?.attributes('rel')).toBe('noopener noreferrer')
-    expect(githubLink?.find('.link-description').text()).toBe('コードリポジトリとプロジェクト')
   })
 
   it('displays Qiita link correctly', () => {
@@ -45,7 +44,6 @@ describe('SocialLinks', () => {
     expect(qiitaLink?.attributes('href')).toBe('https://qiita.com/fussy113')
     expect(qiitaLink?.attributes('target')).toBe('_blank')
     expect(qiitaLink?.attributes('rel')).toBe('noopener noreferrer')
-    expect(qiitaLink?.find('.link-description').text()).toBe('技術記事とナレッジシェア')
   })
 
   it('displays Zenn link correctly', () => {
@@ -58,7 +56,6 @@ describe('SocialLinks', () => {
     expect(zennLink?.attributes('href')).toBe('https://zenn.dev/fussy113')
     expect(zennLink?.attributes('target')).toBe('_blank')
     expect(zennLink?.attributes('rel')).toBe('noopener noreferrer')
-    expect(zennLink?.find('.link-description').text()).toBe('技術ブログと記事投稿')
   })
 
   it('displays Lapras link correctly', () => {
@@ -68,10 +65,9 @@ describe('SocialLinks', () => {
     )
     
     expect(laprasLink?.exists()).toBe(true)
-    expect(laprasLink?.attributes('href')).toBe('https://lapras.com/public/fussy113')
+    expect(laprasLink?.attributes('href')).toBe('https://lapras.com/public/TJBGDRB')
     expect(laprasLink?.attributes('target')).toBe('_blank')
     expect(laprasLink?.attributes('rel')).toBe('noopener noreferrer')
-    expect(laprasLink?.find('.link-description').text()).toBe('プロフェッショナルプロフィール')
   })
 
   it('has proper grid structure', () => {
