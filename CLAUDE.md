@@ -57,7 +57,6 @@ src/
 │   └── *.vue        # コンポーネントファイル
 ├── views/           # ページレベルコンポーネント
 │   ├── HomeView.vue
-│   ├── AboutView.vue
 │   └── DakenView.vue
 ├── router/          # Vue Router設定
 │   └── index.ts     # ルート定義
