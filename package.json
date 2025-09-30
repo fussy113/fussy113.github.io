@@ -47,7 +47,7 @@
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.8.1",
     "eslint": "^9.34.0",
-    "eslint-plugin-vue": "^10.4.0",
+    "eslint-plugin-vue": "^10.5.0",
     "jsdom": "^27.0.0",
     "markuplint": "^4.13.1",
     "npm-run-all2": "^8.0.4",
