@@ -42,5 +42,4 @@ playwright-report/
 
 # Claude Code and MCP specific files
 .claude/settings.local.json
-.mcp.json
 .serena
