@@ -14,12 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize
   type-check:
     runs-on: ubuntu-latest
     needs: setup
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize/
       - run: npm run type-check
   lint:
@@ -27,6 +31,8 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize/
       - run: npm run lint
   stylelint:
@@ -34,6 +40,8 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize/
       - run: npm run stylelint
   markuplint:
@@ -41,6 +49,8 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize/
       - run: npm run markuplint --problem-only
   unit-test:
@@ -48,6 +58,8 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize/
       - run: npm run test:unit
   build:
@@ -55,5 +67,7 @@ jobs:
     needs: [setup, type-check, lint, unit-test]
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - uses: ./.github/composite/initialize/
       - run: npm run build-only
