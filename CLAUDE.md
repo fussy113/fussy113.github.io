@@ -4,32 +4,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## コマンド
 
-**注意:** このプロジェクトはpackage.jsonで指定されている通りnpm（yarnではない）を使用します。yarnではなくnpmコマンドを使用してください。
+**注意:** このプロジェクトはパッケージ管理に pnpm を使用します（npm/yarn ではありません）。Node.js と pnpm のバージョンは mise（`mise.toml`）で管理しています。
 
 ### 開発
 
-- `npm run dev` - ホットリロード付きの開発サーバーを開始
-- `npm run preview` - プロダクションビルドをローカルでプレビュー
+- `pnpm run dev` - ホットリロード付きの開発サーバーを開始
+- `pnpm run preview` - プロダクションビルドをローカルでプレビュー
 
 ### ビルド
 
-- `npm run build` - 型チェックとプロダクション用ビルド（`type-check`と`build-only`を並列実行）
-- `npm run build-only` - 型チェックなしでビルド
+- `pnpm run build` - 型チェックとプロダクション用ビルド（`type-check`と`build-only`を並列実行）
+- `pnpm run build-only` - 型チェックなしでビルド
 
 ### コード品質とリント
 
-- `npm run lint` - 全ファイルでESLintを実行
-- `npm run lint:fix` - 自動修正付きでESLintを実行
-- `npm run type-check` - vue-tscでTypeScript型チェックを実行
-- `npm run format` - Prettierでコードをフォーマット（src/ディレクトリのみ）
-- `npm run stylelint` - VueとSCSSファイルでStylelintを実行
-- `npm run stylelint:fix` - 自動修正付きでStylelintを実行
-- `npm run markuplint` - VueファイルでMarkuplintを実行
-- `npm run markuplint:fix` - 自動修正付きでMarkuplintを実行
+- `pnpm run lint` - 全ファイルでESLintを実行
+- `pnpm run lint:fix` - 自動修正付きでESLintを実行
+- `pnpm run type-check` - vue-tscでTypeScript型チェックを実行
+- `pnpm run format` - Prettierでコードをフォーマット（src/ディレクトリのみ）
+- `pnpm run stylelint` - VueとSCSSファイルでStylelintを実行
+- `pnpm run stylelint:fix` - 自動修正付きでStylelintを実行
+- `pnpm run markuplint` - VueファイルでMarkuplintを実行
+- `pnpm run markuplint:fix` - 自動修正付きでMarkuplintを実行
 
 ### テスト
 
-- `npm run test:unit` - Vitestでユニットテストを実行
+- `pnpm run test:unit` - Vitestでユニットテストを実行
 
 ## アーキテクチャ
 
@@ -95,7 +95,7 @@ src/
 - **Prettier**: コードフォーマット
 - **TypeScript**: vue-tscでの厳密な型チェック
 
-### Node.jsバージョン管理
+### Node.js・pnpmのバージョン管理
 
-- Node.jsバージョン管理にVoltaを使用（22.19.0）
-- package.jsonのenginesでnpm 10.9.3を強制
+- Node.js と pnpm のバージョン管理に mise を使用（`mise.toml`: Node.js 22.19.0 / pnpm 11.5.1）
+- `package.json`の`devEngines`でNode.js / pnpmのバージョンを宣言（`onFail: warn`、miseが供給する実バージョンと照合）
