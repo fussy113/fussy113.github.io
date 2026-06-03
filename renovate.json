@@ -1,0 +1,54 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "schedule:weekly", ":timezone(Asia/Tokyo)"],
+  "labels": ["dependencies"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^package\\.json$/"],
+      "matchStrings": [
+        "\"runtime\":\\s*\\{\\s*\"name\":\\s*\"node\",\\s*\"version\":\\s*\"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node-version"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^package\\.json$/"],
+      "matchStrings": [
+        "\"packageManager\":\\s*\\{\\s*\"name\":\\s*\"pnpm\",\\s*\"version\":\\s*\"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "pnpm",
+      "datasourceTemplate": "npm",
+      "packageNameTemplate": "pnpm"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions"
+    },
+    {
+      "matchManagers": ["npm"],
+      "groupName": "npm dependencies"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["/types/"],
+      "groupName": "types"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["/eslint/", "/prettier/", "/stylelint/", "/markuplint/"],
+      "groupName": "linters"
+    },
+    {
+      "matchDepNames": ["node", "pnpm"],
+      "groupName": "mise"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
+}
