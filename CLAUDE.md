@@ -97,5 +97,5 @@ src/
 
 ### Node.js・pnpmのバージョン管理
 
-- Node.js と pnpm のバージョン管理に mise を使用（`mise.toml`: Node.js 22.19.0 / pnpm 11.5.1）
+- Node.js と pnpm のバージョン管理に mise を使用（`mise.toml`: Node.js 24.16.0 / pnpm 11.5.1）
 - `package.json`の`devEngines`でNode.js / pnpmのバージョンを宣言（`onFail: warn`、miseが供給する実バージョンと照合）
